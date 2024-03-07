@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="media/Screenshot 2024-02-13 165642.png" />
+  </head>
+  <body>
+    <div class="game">
+      You Lost
+      <button>Play Again</button>
+    </div>
+    <div class="win">You Won <button>Play A New Game</button></div>
+    <div class="game-info">
+      <div class="game-name">Guessing Game</div>
+      <div class="category">
+        Word from:
+        <span></span>
+      </div>
+    </div>
+    <div class="container">
+      <hr />
+      <div class="row">
+        <div class="hangman-draw">
+          <div class="the-draw"></div>
+          <div class="the-stand"></div>
+          <div class="the-hang"></div>
+          <div class="the-rope"></div>
+          <div class="the-rope-circle"></div>
+          <div class="the-man">
+            <div class="head"></div>
+            <div class="body"></div>
+            <div class="right-hand"></div>
+            <div class="left-hand"></div>
+            <div class="right-leg"></div>
+            <div class="left-leg"></div>
+          </div>
+        </div>
+        <div class="the-letters"></div>
+      </div>
+      <hr />
+      <div class="theletters-show"></div>
+    </div>
+    <div class="count bluring">Number of remaining attempts: 8</div>
+
+    <div class="play-note">
+      How To Play?
+      <p>
+        <br />
+        - The game consists of guessing the word in the section mentioned in the
+        title, the shortest right
+      </p>
+      <p>
+        <br />
+        - The sections in which you will guess the word are mentioned, each of
+        which is on the far right at the top of the page.
+      </p>
+      <p>
+        <br />
+        - The sections are [Animals , Vegetables , Fruits , Birds]
+      </p>
+      <p>
+        <br />
+        - You have 8 error converters, and with each error attempt, part of the
+        gallows will be drawn on which the poor man will be hanged.
+      </p>
+      <br />
+      Note:
+      <p>
+        <br />
+        - The benefit of the game is to stimulate memory. If you do not know the
+        word you want to guess and you have exhausted the number of attempts to
+        make a mistake, the solution will appear to you and you will learn a new
+        word.
+      </p>
+    </div>
+    <footer>
+      <div class="shawky">
+        <p>
+          developed by
+          <a href="https://github.com/shawky-13" target="_blank"
+            >shawky Mshrif</a
+          >
+        </p>
+        <img src="media/IMG_20210513_235934_960.jpg" alt="develper-image" />
+      </div>
+      <div class="gift">i gift this game to my sweety sister 🥰❤️</div>
+      <div class="thanks">
+        <p>thanks to my mentor osama elzero</p>
+      </div>
+    </footer>
+    <audio src="sounds/you-win-sequence-1-183948.mp3" id="win"></audio>
+    <audio src="sounds/the-correct-answer-33-183620.mp3" id="correct"></audio>
+    <audio src="sounds/silly-trumpet-3-187810.mp3" id="lost"></audio>
+    <audio src="sounds/8-bit-game-7-188104.mp3" id="wrong"></audio>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
